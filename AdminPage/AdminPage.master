@@ -1,0 +1,290 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminPage.master.cs" Inherits="UserPage_UserPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            margin-top: 0px;
+        }
+        .background {
+            background-image: url('/images/Website-Background-Tile.png');
+        }
+        .button {
+         display: inline-block;
+         padding: 15px 30px;
+         font-size: 24px;
+         cursor: pointer;
+         text-align: center;
+         text-decoration: none;
+         outline: none;
+         color: white;
+         background-color: #555555;
+         border: none;
+         box-shadow: 0 9px #999;
+         float: left;
+         font-family: 'Lucida Handwriting';
+        }
+
+        .button:hover {background-color: red}
+
+        .button:active {
+          background-color: purple;
+          box-shadow: 0 5px #666;
+          transform: translateY(4px);
+        }
+        .auto-style3 {
+            position: relative;
+            left: 0px;
+            top: -25px;
+            width: 1190px;
+            height: 26px;
+            z-index: 2;
+        }
+        .auto-style5 {
+            width: 929px;
+            height: 62px;
+            position: absolute;
+            top: -7px;
+            left: 204px;
+            z-index: 1;
+        }
+        .auto-style6 {
+            position: relative;
+            left: 0px;
+            top: -10px;
+            height: auto;
+            width: 1190px;
+            background-image: url('/images/3.jpg');
+        }
+/*************************************************************************************/
+.dropbtn {
+     border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            cursor: pointer;
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 24px;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: white;
+            background-color: #555555;
+            box-shadow: 0 9px #999;
+            float: left;
+            position: absolute;
+            top: -51px;
+            left: 701px;
+            z-index: 1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 224px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 14px;
+    left: 790px;
+    font-family: 'Lucida Handwriting'
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    overflow:hidden;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+/*************************************************************************************/
+                
+        .auto-style9 {
+            border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: white;
+            background-color: #555555;
+            box-shadow: 0 9px #999;
+            float: left;
+            position: absolute;
+            top: 9px;
+            left: 1016px;
+            z-index: 1;
+            height: 65px;
+            font-family: 'Lucida Handwriting';
+            width: 168px;
+        }
+        .auto-style9:hover {background-color: red}
+
+        .auto-style9:active {
+          background-color: purple;
+          box-shadow: 0 5px #666;
+          transform: translateY(4px);
+        }
+        .auto-style10 {
+            border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: white;
+            background-color: #555555;
+            box-shadow: 0 9px #999;
+            float: left;
+            position: absolute;
+            top: -51px;
+            left: 782px;
+            z-index: 1;
+            height: 65px;
+            font-family: 'Lucida Handwriting';
+            width: 234px;
+        }
+        
+        .auto-style11 {
+            position: relative;
+            left: 0px;
+            top: -25px;
+            height: auto;
+            width: 1190px;
+        }
+        
+        .auto-style12 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .auto-style13 {
+            position: absolute;
+            top: 26px;
+            left: 62px;
+            z-index: 1;
+            width: 180px;
+            height: 130px;
+        }
+        
+        .auto-style14 {
+            font-size: 50pt;
+            text-decoration: blink;
+        }
+        
+        .auto-style15 {
+            border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: white;
+            background-color: #555555;
+            box-shadow: 0 9px #999;
+            float: left;
+            font-family: 'Lucida Handwriting';
+            margin-left: 0px;
+        }
+        
+        .mail {
+            position: absolute;
+            top: 31px;
+            left: 35px;
+            z-index: 1;
+            width: 48px;
+            height: 34px;
+        }
+        
+    </style>
+</head>
+<body class =" background" style="margin-left: 60px; margin-top: 25px">
+    <form id="form1" runat="server">
+        <asp:Panel ID="Panel1" runat="server" BackColor="#003366" CssClass="auto-style1" Height="156px" Width="1190px">
+            <h1 class="auto-style12">
+                <asp:Image ID="Image1" runat="server" CssClass="auto-style13" ImageUrl="~/images/enroll.jpg" />
+                <br />
+                <span class="auto-style14"><strong><span class="auto-style14" style="color: #FFFFFF; font-family: 'Lucida Handwriting'">&nbsp;&nbsp; Citizen Card System</span></strong></span></h1>
+        </asp:Panel>
+        <asp:Panel ID="Panel2" runat="server" CssClass="auto-style6">
+            <p>
+                <marquee direction="left"  scrolldelay="1" scrollamount="8" behavior="scroll" loop="infinite"  style="background-color:#0000FF" id="Marquee1" class="auto-style3"><font style="font-size:19px" color="#00FF00" face="Lucida Handwriting"><b>Welcome to the Citizen Card System</b></font></marquee>
+                 </p>
+            <p class="auto-style5">  <asp:Button ID="Button1" runat="server" BorderStyle="None" CssClass="auto-style15" Height="65px" Width="144px" Text="Home" PostBackUrl="~/AdminPage/AdminHome.aspx" CausesValidation="False" />
+                <asp:Button ID="Button2" runat="server" BorderStyle="None" CssClass="button" Height="65px" Text="Admin Info" Width="220px" PostBackUrl="~/AdminPage/AdminInfo.aspx" CausesValidation="False" />
+                <asp:Button ID="Button3" runat="server" BorderStyle="None" CssClass="button" Height="65px" Text="User Info" Width="214px" PostBackUrl="~/AdminPage/UserInfo.aspx" CausesValidation="False" /> 
+                <div class="dropdown" ><asp:Button ID="Button4" runat="server" BorderStyle="None" CssClass="auto-style10" Height="65px" Text="Services Bill" />
+                    <div class="dropdown-content">
+                        <a href="ElectricBill.aspx">Electricity Bill</a> 
+                        <a href="TelephoneBill.aspx">Telephone Bill</a>
+                        <a href="GasBill.aspx">Gas Bill</a> 
+                    </div>
+                </div>
+                    <asp:Button ID="Button5" runat="server" BorderStyle="None" CssClass="auto-style9" Text="Sign Out" CausesValidation="False" OnClick="Button5_Click" PostBackUrl="~/MainPage/Home.aspx" />
+                
+    
+
+                <br />
+                <asp:ImageButton ID="ImageButton1" runat="server" CssClass="mail" ImageUrl="~/images/mailbox.jpg" />
+                
+    
+
+                <br />
+                <hr />
+                <br />
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <br />
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+            </p>  
+
+        </asp:Panel>
+                <div class="auto-style12">
+                <asp:Panel ID="Panel3" runat="server" BackColor="#CC0099" CssClass="auto-style11">
+                    <br />
+                    Copyright @2017 Citizen Card System by Shashank Vaibhav Sinha<br />
+                    <br />
+        </asp:Panel>
+        </div>
+    </form>
+</body>
+</html>
+                    </asp:ContentPlaceHolder>
+                
+'
