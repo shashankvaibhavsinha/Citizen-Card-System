@@ -42,7 +42,7 @@ public partial class MainPage_AdminLogin : System.Web.UI.Page
             SmtpClient smtp = new SmtpClient();
             smtp.Host = "smtp.gmail.com";
             smtp.EnableSsl = true;
-            NetworkCredential NetworkCred = new NetworkCredential("shashankvaibhavsinha@gmail.com", "systematicalshashank");
+            NetworkCredential NetworkCred = new NetworkCredential("shashankvaibhavsinha@gmail.com", "*************");
             smtp.UseDefaultCredentials = true;
             smtp.Credentials = NetworkCred;
             smtp.Port = 587;
